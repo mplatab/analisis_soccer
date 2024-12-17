@@ -1,111 +1,116 @@
 # ⚽ Visualizador de Datos de Fútbol con StatsBomb
 
-Esta aplicación web, desarrollada con Streamlit, permite visualizar y analizar datos de fútbol utilizando la API de StatsBomb. La aplicación ofrece un análisis completo y detallado de partidos de fútbol, con múltiples visualizaciones y estadísticas.
+Esta aplicación web, desarrollada con **Streamlit**, permite visualizar y analizar datos de fútbol mediante la API de **StatsBomb**. Ofrece análisis interactivos y visualizaciones avanzadas para partidos, jugadores y equipos.
+
+---
 
 ## 📋 Características Principales
 
-- Visualización interactiva de pases por jugador y equipo
-- Análisis defensivo con mapas de calor de presión
-- Estadísticas detalladas de tiros y Expected Goals (xG)
-- Análisis del rendimiento individual de jugadores
-- Interfaz intuitiva para selección de competiciones, temporadas y partidos
+- **Visualización interactiva** de pases por jugador y equipo
+- **Análisis defensivo** con mapas de calor de presión y métricas
+- Estadísticas detalladas de **tiros** y **Expected Goals (xG)**
+- **Análisis de rendimiento individual** de jugadores
+- Interfaz intuitiva para seleccionar competiciones, temporadas y partidos
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- Python 3.x
-- Streamlit
-- statsbombpy
-- pandas
-- matplotlib
-- mplsoccer
+| Tecnología        | Descripción                              |
+|-------------------|------------------------------------------|
+| **Python 3.x**    | Lenguaje principal para el backend       |
+| **Streamlit**     | Framework para aplicaciones web interactivas |
+| **statsbombpy**   | Biblioteca para acceder a la API de StatsBomb |
+| **pandas**        | Manipulación y análisis de datos         |
+| **matplotlib**    | Generación de gráficos y visualizaciones |
+| **mplsoccer**     | Visualización de datos específicos de fútbol |
+
+---
 
 ## 🏗️ Estructura de la Aplicación
 
-### 1. Configuración Inicial
-```
+### 1️⃣ Configuración Inicial
+- Conexión con la API de StatsBomb
+- Instalación de dependencias y configuración del entorno
 
-### 2. Selección de Datos
-- Carga de competiciones disponibles
-- Filtrado de temporadas
-- Selección de partidos específicos
+### 2️⃣ Selección de Datos
+- **Carga dinámica** de competiciones disponibles
+- Filtrado interactivo por **temporada** y **partido específico**
 
-### 3. Análisis por Pestañas
+### 3️⃣ Análisis por Pestañas
 
-#### 📊 Pestaña 1: Análisis de Pases
-- Visualización de pases por equipo y jugador
-- Mapa del campo con flechas indicando dirección de pases
+#### 📊 Análisis de Pases
+- Visualización de patrones de pases en el campo
 - Filtros interactivos por equipo y jugador
+- Mapas del campo con flechas que indican la **dirección y frecuencia** de pases
 
-#### 🛡️ Pestaña 2: Análisis Defensivo
-- Métricas de presión defensiva
-- Gráficos circulares de acciones defensivas
-- Mapas de calor de presión
+#### 🛡️ Análisis Defensivo
+- Métricas y gráficos de **presión defensiva**
+- Mapas de calor de **recuperaciones y actividad defensiva**
+- Estadísticas por equipo y jugador
 
-#### ⚽ Pestaña 3: Análisis de Tiros
-- Estadísticas de tiros y goles
-- Visualización de Expected Goals (xG)
-- Mapas de ubicación de tiros
+#### ⚽ Análisis de Tiros
+- Visualización de **Expected Goals (xG)**
+- Mapas interactivos de ubicación de tiros y goles
+- Métricas de eficiencia y efectividad en el ataque
 
-#### 👤 Pestaña 4: Rendimiento Individual
-- Estadísticas detalladas por jugador
-- Métricas individuales de rendimiento
-- Comparación entre jugadores
+#### 👤 Rendimiento Individual
+- Estadísticas avanzadas por jugador
+- Métricas de participación ofensiva y defensiva
+- Comparativas entre jugadores seleccionados
+
+---
 
 ## 📦 Requisitos de Instalación
-```
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/mplatab/analisis_soccer.git
+   cd analisis_soccer
+   ```
+
+2. Instala las dependencias necesarias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Ejecuta la aplicación:
+   ```bash
+   streamlit run app.py
+   ```
 
 ## 🚀 Cómo Ejecutar la Aplicación
 
-1. Clona el repositorio
-2. Instala las dependencias
-3. Ejecuta la aplicación:
-```bash
-streamlit run app.py
-```
+1. Descarga o clona el repositorio
+2. Instala las dependencias utilizando requirements.txt
+3. Lanza la aplicación con el siguiente comando:
+   ```bash
+   streamlit run app.py
+   ```
+4. Accede a la interfaz a través del navegador en:
+   `http://localhost:8501`
 
-## 📊 Funcionalidades Detalladas
+## 📈 Visualizaciones Incluidas
 
-### Análisis de Pases
-- Visualización de patrones de pase
-- Filtrado por equipo y jugador
-- Representación gráfica en campo de fútbol
-
-### Análisis Defensivo
-- Tracking de presión y recuperaciones
-- Estadísticas defensivas por equipo
-- Mapas de calor de actividad defensiva
-
-### Análisis de Tiros
-- Métricas de eficiencia de tiro
-- Cálculo de Expected Goals (xG)
-- Visualización espacial de tiros
-
-### Rendimiento Individual
-- Estadísticas completas por jugador
-- Métricas de participación en el juego
-- Comparativas entre jugadores
+- Mapas de calor (presión defensiva y actividad)
+- Gráficos de pases (dirección y frecuencia)
+- Diagramas de tiros (xG y ubicación de tiros)
+- Estadísticas tabulares con filtros dinámicos
+- Gráficos circulares de acciones defensivas
 
 ## 🔍 Procesamiento de Datos
 
-La aplicación utiliza la API de StatsBomb para:
-- Cargar datos de competiciones
-- Procesar eventos de partidos
-- Calcular estadísticas avanzadas
-- Generar visualizaciones interactivas
+La aplicación realiza las siguientes tareas con la API de StatsBomb:
 
-## 📈 Visualizaciones
-
-- Mapas de calor
-- Gráficos de pases
-- Diagramas de tiros
-- Estadísticas tabulares
-- Gráficos circulares
+- Carga de datos de competiciones y eventos
+- Procesamiento y filtrado de información específica
+- Cálculo de métricas avanzadas como xG y presión
+- Generación de visualizaciones interactivas en tiempo real
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambios mayores antes de crear un pull request.
+Las contribuciones son bienvenidas. Para proponer cambios:
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
-```
+1. Abre un issue para discutir tus ideas
+2. Realiza un fork del repositorio
+3. Envía un Pull Request con tus mejoras
