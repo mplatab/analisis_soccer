@@ -1,0 +1,22 @@
+# Carpetas de entorno virtual
+venv/
+env/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Configuración de entorno local
+.env
+
+# Archivos grandes o temporales
+*.log
+*.tmp
+
+# Archivos de dependencias locales
+site-packages/
+
+# Archivos ocultos de sistemas
+.DS_Store
+Thumbs.db
